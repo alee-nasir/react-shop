@@ -4,9 +4,7 @@ import axios from "axios";
 import { setProducts } from "../redux/actions/productAction";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import ProductComponent from "./ProductComponent";
-import { CardGroup } from "react-bootstrap";
 
 export default function ProductListing() {
   const products = useSelector((state) => state);
@@ -25,7 +23,6 @@ export default function ProductListing() {
     fetchProducts();
   }, []);
 
-  console.log("Products: ", products);
   return (
     <Container className="mt-5">
       <Row>

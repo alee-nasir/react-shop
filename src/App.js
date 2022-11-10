@@ -10,7 +10,8 @@ function App() {
       <Navmenu />
       <Routes>
         <Route path="/" element={<ProductListing />} />
-        <Route path="/new-meetup" element={<ProductDetails />} />
+        <Route path="/" element={<Navmenu />} />
+        <Route path="/product/:productId" element={<ProductDetails />} />
         <Route>404 Page Not Found</Route>
       </Routes>
     </div>
